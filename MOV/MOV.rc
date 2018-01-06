@@ -1,0 +1,379 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\MOV.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\MOV.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 MOV"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "MOV 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2018",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_MOV_DIALOG DIALOGEX 0, 0, 488, 322
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "MOV"
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "List2",IDC_LIST2,"SysListView32",LVS_REPORT | 
+                    LVS_SORTDESCENDING | WS_BORDER | WS_TABSTOP,7,13,352,295
+    PUSHBUTTON      "增加电影信息",IDC_BUTTON_ADD,377,20,86,25
+    PUSHBUTTON      "删除电影信息",IDC_BUTTON_DEL,377,49,86,25
+    PUSHBUTTON      "修改电影信息",IDC_BUTTON_INF,377,77,86,25
+    PUSHBUTTON      "查找电影信息",IDC_BUTTON_SEARCH,377,105,86,25
+    PUSHBUTTON      "保存",IDC_BUTTON_SAVE,369,229,41,20
+    PUSHBUTTON      "读取",IDC_BUTTON_READ,432,228,41,20
+    PUSHBUTTON      "关于",IDC_BUTTON_ABOUT,387,256,75,26
+    PUSHBUTTON      "退出",IDC_BUTTON_EXIT,387,289,75,26
+    LTEXT           "电影名称",IDC_STATIC,375,144,37,10
+    LTEXT           "上映时间",IDC_STATIC,374,158,38,10
+    LTEXT           "剩余票量",IDC_STATIC,374,176,36,10
+    LTEXT           "售票价格",IDC_STATIC,374,191,34,10
+    EDITTEXT        IDC_EDIT_mc,416,142,50,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_sj,416,158,50,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_yp,416,173,50,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_jg,416,188,50,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "查找",IDC_BUTTON_S,398,206,43,16
+END
+
+IDD_DIALOG_ADD DIALOG DISCARDABLE  0, 0, 237, 141
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "增加电影信息"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,99,114,50,14
+    CTEXT           "请输入增加的电影信息！",IDC_STATIC,40,20,162,18
+    LTEXT           "电影名称",IDC_STATIC,20,51,35,9
+    LTEXT           "剩余票量",IDC_STATIC,18,86,35,9
+    LTEXT           "上映时间",IDC_STATIC,118,50,35,9
+    LTEXT           "售票价格",IDC_STATIC,117,86,35,9
+    EDITTEXT        IDC_EDIT_mc,55,48,59,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_yp,54,85,59,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_sj,156,47,59,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_jg,156,84,59,14,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_INF DIALOG DISCARDABLE  0, 0, 237, 141
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "修改电影信息"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,99,114,50,14
+    CTEXT           "请输入需要修改的电影信息！",IDC_STATIC,40,20,162,18
+    LTEXT           "电影名称",IDC_STATIC,20,51,35,9
+    LTEXT           "剩余票量",IDC_STATIC,18,86,35,9
+    LTEXT           "上映时间",IDC_STATIC,118,50,35,9
+    LTEXT           "售票价格",IDC_STATIC,117,86,35,9
+    EDITTEXT        IDC_EDIT_mc,55,48,59,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_yp,54,85,59,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_sj,156,47,59,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_jg,156,84,59,14,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_SEARCH DIALOG DISCARDABLE  0, 0, 167, 146
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "查找电影信息"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,57,116,50,14
+    EDITTEXT        IDC_EDIT1,41,81,79,16,ES_AUTOHSCROLL
+    LTEXT           "请选择需要查找的项目",IDC_STATIC,39,7,87,13
+    CTEXT           "输入查找内容",IDC_STATIC,37,63,87,13
+    COMBOBOX        IDC_COMBO2,39,21,84,40,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DIALOG_DL DIALOG DISCARDABLE  0, 0, 187, 96
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "登录"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "登入",IDOK,72,67,50,14
+    LTEXT           "用户名",IDC_STATIC,40,21,25,16
+    LTEXT           "  密  码",IDC_STATIC,38,43,30,16
+    EDITTEXT        IDC_EDIT_USER,78,19,73,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PASSWORD,77,42,73,15,ES_AUTOHSCROLL
+END
+
+IDD_ABOUTBOX1 DIALOG DISCARDABLE  0, 0, 215, 118
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于这款辣鸡软件"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,21,21
+    DEFPUSHBUTTON   "骚戴斯奈",IDOK,81,97,50,14,WS_GROUP
+    LTEXT           "作者姓名：刘宗宇",IDC_STATIC,59,14,96,12
+    LTEXT           "联系QQ：642876114",IDC_STATIC,59,29,96,12
+    LTEXT           "所在班级：16级软件二班",IDC_STATIC,59,43,96,12
+    LTEXT           "联系电话：17707834556",IDC_STATIC,59,56,96,12
+    LTEXT           "联系邮箱：642876114@qq.com",IDC_STATIC,59,69,124,12
+    LTEXT           "本产品仅供学习交流使用！",IDC_STATIC,60,84,124,12
+END
+
+IDD_DIALOG_SEARCH1 DIALOG DISCARDABLE  0, 0, 237, 141
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "查找电影信息"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,99,114,50,14
+    CTEXT           "请输入需要修改的电影信息！",IDC_STATIC,40,20,162,18
+    LTEXT           "电影名称",IDC_STATIC,20,51,35,9
+    LTEXT           "剩余票量",IDC_STATIC,18,86,35,9
+    LTEXT           "上映时间",IDC_STATIC,118,50,35,9
+    LTEXT           "售票价格",IDC_STATIC,117,86,35,9
+    EDITTEXT        IDC_EDIT_mc,55,48,59,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_yp,54,85,59,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_sj,156,47,59,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_jg,156,84,59,14,ES_AUTOHSCROLL
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "MOV Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "MOV\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2018\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "MOV.EXE\0"
+            VALUE "ProductName", "MOV 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_MOV_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 481
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 315
+    END
+
+    IDD_DIALOG_ADD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 230
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 134
+    END
+
+    IDD_DIALOG_INF, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 230
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 134
+    END
+
+    IDD_DIALOG_SEARCH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 160
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 139
+    END
+
+    IDD_DIALOG_DL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 89
+    END
+
+    IDD_ABOUTBOX1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 208
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 111
+    END
+
+    IDD_DIALOG_SEARCH1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 230
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 134
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DIALOG_SEARCH DLGINIT
+BEGIN
+    IDC_COMBO2, 0x403, 9, 0
+0xe7b5, 0xb0d3, 0xfbc3, 0xc6b3, "\000" 
+    IDC_COMBO2, 0x403, 9, 0
+0xcfc9, 0xb3d3, 0xb1ca, 0xe4bc, "\000" 
+    IDC_COMBO2, 0x403, 9, 0
+0xa3ca, 0xe0d3, 0xb1c6, 0xbfc1, "\000" 
+    IDC_COMBO2, 0x403, 9, 0
+0xdbca, 0xb1c6, 0xdbbc, 0xf1b8, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 MOV(&A)..."
+END
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\MOV.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

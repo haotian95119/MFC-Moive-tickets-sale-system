@@ -1,0 +1,72 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: MOV - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Release/MOV.res" /d "NDEBUG" /d "_AFXDLL" "C:\Users\Administrator\Desktop\新建文件夹 (2)\MOV\MOV.rc"" 
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSP5964.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/MOV.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Users\Administrator\Desktop\新建文件夹 (2)\MOV\ABOUT.cpp"
+"C:\Users\Administrator\Desktop\新建文件夹 (2)\MOV\ADD.cpp"
+"C:\Users\Administrator\Desktop\新建文件夹 (2)\MOV\Find.cpp"
+"C:\Users\Administrator\Desktop\新建文件夹 (2)\MOV\INF.cpp"
+"C:\Users\Administrator\Desktop\新建文件夹 (2)\MOV\MOV.cpp"
+"C:\Users\Administrator\Desktop\新建文件夹 (2)\MOV\MOVDlg.cpp"
+"C:\Users\Administrator\Desktop\新建文件夹 (2)\MOV\PASS.cpp"
+]
+Creating command line "cl.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSP5964.tmp" 
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSP5965.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/MOV.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Users\Administrator\Desktop\新建文件夹 (2)\MOV\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSP5965.tmp" 
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSP5975.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Release/MOV.pdb" /machine:I386 /out:"Release/MOV.exe" 
+".\Release\ABOUT.obj"
+".\Release\ADD.obj"
+".\Release\Find.obj"
+".\Release\INF.obj"
+".\Release\MOV.obj"
+".\Release\MOVDlg.obj"
+".\Release\PASS.obj"
+".\Release\StdAfx.obj"
+".\Release\MOV.res"
+]
+Creating command line "link.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSP5975.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+ABOUT.cpp
+ADD.cpp
+Find.cpp
+INF.cpp
+MOV.cpp
+MOVDlg.cpp
+PASS.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+MOV.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: MOV - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+MOV.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
